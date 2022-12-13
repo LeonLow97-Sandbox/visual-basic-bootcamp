@@ -84,3 +84,55 @@ Dim message = $"Column Index: {e.ColumnIndex}" + vbcr + $"Row Index: {e.RowIndex
     End Sub
 ```
 
+## Using `IF` with `SaveFileDialog`
+
+- Use `MenuStrip` and `SaveFileDialog`
+
+```vb
+    Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
+        'Opens up the save file dialog
+        'Saved as a Rich text format file and then in plan text format
+        'DiaglogResult.OK in case if user cancels.
+        If SaveFileDialog1.ShowDialog() = DialogResult.OK Then
+            RichTextBox1.SaveFile(SaveFileDialog1.FileName, RichTextBoxStreamType.PlainText)
+        End If
+    End Sub
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
