@@ -1,4 +1,20 @@
-## TrackBar, Button, TextInput
+## Adding Tools using ToolBox
+
+- View --> Toolbox
+- Button | Label | TrackBar | TextBox | PictureBox | DataGridView 
+
+## PictureBox
+
+```vb
+Public Class Form1
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Dim path = IO.Path.GetFileName(PictureBox2.ImageLocation)
+        MessageBox.Show(path, "Picture", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
+End Class
+```
+
+## TrackBar, Button, TextBox
 
 ```vb
 Public Class Form1
