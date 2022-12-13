@@ -197,6 +197,48 @@ End Class
     End Sub
 ```
 
+## If Else - Menus and Form Load
+
+```vb
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
+        If Panel1.Visible = True Then
+            mnuShowHidePanel.Text = "Hide Panel"
+        Else
+            mnuShowHidePanel.Text = "Show Panel"
+        End If
+    End Sub
+
+    Private Sub mnuShowHidePanel_Click(sender As Object, e As EventArgs) Handles mnuShowHidePanel.Click
+        If mnuShowHidePanel.Text = "Hide Panel" Then
+            Panel1.Visible = False
+            mnuShowHidePanel.Text = "Show Panel"
+        Else
+            Panel1.Visible = True
+            mnuShowHidePanel.Text = "Hide Panel"
+        End If
+    End Sub
+```
+
+## IF with Image Lists
+
+- Changes an images on button click through an `ImageList`
+```vb
+Public Class Form1
+    'Set as global variable
+    Dim pos = 0
+    Private Sub btnForward_Click(sender As Object, e As EventArgs) Handles btnForward.Click
+        Dim g = Graphics.FromHwnd(Me.Handle)
+
+        If pos < ImageList1.Images.Count Then
+            ImageList1.Draw(g, New Point(10, 10), pos)
+            pos += 1
+        End If
+        g.Dispose()
+    End Sub
+End Class
+
+```
+
 
 
 
