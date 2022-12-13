@@ -1,0 +1,13 @@
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\Delegates\Delegates\bin\Debug\Delegates.exe.config
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\Delegates\Delegates\bin\Debug\Delegates.exe
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\Delegates\Delegates\bin\Debug\Delegates.pdb
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\Delegates\Delegates\bin\Debug\Delegates.xml
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\Delegates\Delegates\obj\Debug\Delegates.vbproj.AssemblyReference.cache
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\Delegates\Delegates\obj\Debug\Delegates.vbproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\Delegates\Delegates\obj\Debug\Delegates.Form1.resources
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\Delegates\Delegates\obj\Debug\Delegates.Resources.resources
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\Delegates\Delegates\obj\Debug\Delegates.vbproj.GenerateResource.cache
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\Delegates\Delegates\obj\Debug\Delegates.vbproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\Delegates\Delegates\obj\Debug\Delegates.exe
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\Delegates\Delegates\obj\Debug\Delegates.xml
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\Delegates\Delegates\obj\Debug\Delegates.pdb

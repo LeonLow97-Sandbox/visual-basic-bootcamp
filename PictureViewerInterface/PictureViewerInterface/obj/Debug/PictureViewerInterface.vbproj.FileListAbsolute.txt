@@ -1,0 +1,13 @@
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\PictureViewerInterface\PictureViewerInterface\bin\Debug\PictureViewerInterface.exe.config
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\PictureViewerInterface\PictureViewerInterface\bin\Debug\PictureViewerInterface.exe
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\PictureViewerInterface\PictureViewerInterface\bin\Debug\PictureViewerInterface.pdb
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\PictureViewerInterface\PictureViewerInterface\bin\Debug\PictureViewerInterface.xml
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\PictureViewerInterface\PictureViewerInterface\obj\Debug\PictureViewerInterface.vbproj.AssemblyReference.cache
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\PictureViewerInterface\PictureViewerInterface\obj\Debug\PictureViewerInterface.vbproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\PictureViewerInterface\PictureViewerInterface\obj\Debug\PictureViewerInterface.Form1.resources
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\PictureViewerInterface\PictureViewerInterface\obj\Debug\PictureViewerInterface.Resources.resources
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\PictureViewerInterface\PictureViewerInterface\obj\Debug\PictureViewerInterface.vbproj.GenerateResource.cache
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\PictureViewerInterface\PictureViewerInterface\obj\Debug\PictureViewerInterface.vbproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\PictureViewerInterface\PictureViewerInterface\obj\Debug\PictureViewerInterface.exe
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\PictureViewerInterface\PictureViewerInterface\obj\Debug\PictureViewerInterface.xml
+C:\Users\User\Desktop\Self-Learning\visual-basic-bootcamp\PictureViewerInterface\PictureViewerInterface\obj\Debug\PictureViewerInterface.pdb

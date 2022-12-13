@@ -1,0 +1,62 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio files
+*.suo
+*.user
+*.aps
+*.pdb
+
+# User-specific files
+*.user
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+
+# Visual Studio 2015 cache/options directory
+.vs/
+
+# Visual Studio 2017
+.vs/
+
+# Uncomment if necessary
+# .idea/
+
+# MSTest test Results
+TestResults/
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+
+# DNX
+project.lock.json
+
+# DotCover
+*.dotCover
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# NCrunch
+_NCrunch_*/
+.*crunch*.local.xml
+
+# StyleCop
+StyleCopReport.xml
+
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ncb
+*.suo
+*.tlb
+*.pdb
+*.dll
+*.exe
