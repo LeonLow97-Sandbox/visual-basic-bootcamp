@@ -246,6 +246,10 @@ End Class
 - This program creates a ComboBox and allows you to select a shape (circle or square)
 - Drag the TrackBar to adjust the size of the shape.
 
+## `AndAlso` Operator
+
+
+
 
 
 
