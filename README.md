@@ -239,6 +239,14 @@ End Class
 
 ```
 
+## Building a Graphics Program
+
+- Using ComboBox, ToolTip, TrackBar
+    - Set ToolTip properties `isBalloon` to True for a nicer tooltip
+- This program creates a ComboBox and allows you to select a shape (circle or square)
+- Drag the TrackBar to adjust the size of the shape.
+
+
 
 
 
