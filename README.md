@@ -69,3 +69,18 @@ End Class
 ```vb
 Dim message = $"Column Index: {e.ColumnIndex}" + vbcr + $"Row Index: {e.RowIndex}"
 ```
+
+## MonthCalendar
+
+- Hide and Unhide calendar with checkbox
+
+```vb
+    Private Sub chkCalendar_CheckedChanged(sender As Object, e As EventArgs) Handles chkCalendar.CheckedChanged
+        If chkCalendar.Checked Then
+            MonthCalendar1.Visible = True
+        Else
+            MonthCalendar1.Visible = False
+        End If
+    End Sub
+```
+
