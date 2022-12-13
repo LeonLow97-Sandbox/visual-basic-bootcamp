@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CompoundOperators", "CompoundOperators\CompoundOperators.vbproj", "{13A7F14C-1C26-4D23-B1B8-42A0D66E3593}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13A7F14C-1C26-4D23-B1B8-42A0D66E3593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A7F14C-1C26-4D23-B1B8-42A0D66E3593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A7F14C-1C26-4D23-B1B8-42A0D66E3593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A7F14C-1C26-4D23-B1B8-42A0D66E3593}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB4B0A73-38E6-4B63-A6D3-1CE7359AA2D8}
+	EndGlobalSection
+EndGlobal

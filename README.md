@@ -3,17 +3,6 @@
 - View --> Toolbox
 - Button | Label | TrackBar | TextBox | PictureBox | DataGridView 
 
-## PictureBox
-
-```vb
-Public Class Form1
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
-        Dim path = IO.Path.GetFileName(PictureBox2.ImageLocation)
-        MessageBox.Show(path, "Picture", MessageBoxButtons.OK, MessageBoxIcon.Information)
-    End Sub
-End Class
-```
-
 ## TrackBar, Button, TextBox
 
 ```vb
@@ -48,6 +37,24 @@ Public Class Form1
 End Class
 ```
 
+## Going to the next line 
+
+- Use `vbcr` to go to the next line
+```vb
+Dim message = $"Column Index: {e.ColumnIndex}" + vbcr + $"Row Index: {e.RowIndex}"
+```
+
+## PictureBox
+
+```vb
+Public Class Form1
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Dim path = IO.Path.GetFileName(PictureBox2.ImageLocation)
+        MessageBox.Show(path, "Picture", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
+End Class
+```
+
 ## DataGridView (Delegates)
 
 ```vb
@@ -61,13 +68,6 @@ Public Class Form1
         AddHandler DataGridView1.CellContentClick, AddressOf CellClick
     End Sub
 End Class
-```
-
-## Going to the next line 
-
-- Use `vbcr` to go to the next line
-```vb
-Dim message = $"Column Index: {e.ColumnIndex}" + vbcr + $"Row Index: {e.RowIndex}"
 ```
 
 ## MonthCalendar
@@ -95,6 +95,70 @@ Dim message = $"Column Index: {e.ColumnIndex}" + vbcr + $"Row Index: {e.RowIndex
         'DiaglogResult.OK in case if user cancels.
         If SaveFileDialog1.ShowDialog() = DialogResult.OK Then
             RichTextBox1.SaveFile(SaveFileDialog1.FileName, RichTextBoxStreamType.PlainText)
+        End If
+    End Sub
+```
+
+## Using Compound Operators
+
+```vb
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Label1.Text = "Results: "
+
+        Dim x As Double = 1
+        Label1.Text += vbCr + $"x={x}"
+        x = x + 1
+        Label1.Text += vbCr + $"x+1={x}"
+
+        x *= 2
+        Label1.Text += vbCr + $"x*2={x}"
+
+        x -= 1
+        Label1.Text += vbCr + $"x-1={x}"
+    End Sub
+```
+
+## Looping: Making a program that reads a file
+
+- Use `OpenFileDialog`
+- Reading a stream of message for a `.txt` file.
+
+```vb
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        'In case cancel, code won't crash
+        If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+            'Reads the entire stream in the file
+            Dim stream As StreamReader = File.OpenText(OpenFileDialog1.FileName)
+            Dim c As Integer = stream.Peek()
+
+            'File has multiple lines
+            'Can also do stream.Peek() <> -1 OR stream.Peek() >= 0
+            While c > -1
+                Label1.Text += vbCr + stream.ReadLine()
+                c = stream.Peek()
+            End While
+
+            'Ensures that any memory or resources used by the stream are released
+            'Improves the overall performance and efficiency of the program
+            stream.Close()
+        End If
+    End Sub
+End Class
+```
+
+## Looping with **Do Until / Loop**
+
+```vb
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+            Dim stream As StreamReader = File.OpenText(OpenFileDialog1.FileName)
+            Dim c As Integer = stream.Peek()
+            Do Until c = -1
+                Label1.Text += vbCr + stream.ReadLine()
+                c = stream.Peek()
+            Loop
+            stream.Close()
         End If
     End Sub
 ```
