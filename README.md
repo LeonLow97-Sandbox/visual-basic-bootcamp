@@ -183,6 +183,22 @@ Public Class Form1
 End Class
 ```
 
+## Write Selected Choices (from check list) to a file
+
+```vb
+    Private Sub btnWriteToFile_Click(sender As Object, e As EventArgs) Handles btnWriteToFile.Click
+        Dim s As StreamWriter = New StreamWriter("C:\Users\User\delete.txt")
+        For index = 0 To CheckedListBox1.CheckedIndices.Count - 1
+            s.WriteLine(CheckedListBox1.CheckedItems(index))
+        Next
+        s.Close()
+        'opens this delete.txt file right away
+        Process.Start("notepad.exe", "C:\Users\User\delete.txt")
+    End Sub
+```
+
+
+
 
 
 

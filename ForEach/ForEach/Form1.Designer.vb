@@ -23,14 +23,16 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
+        Me.btnWriteToFile = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.btnWriteToFile)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.CheckedListBox1)
@@ -39,15 +41,14 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(776, 378)
         Me.Panel1.TabIndex = 0
         '
-        'CheckedListBox1
+        'Label1
         '
-        Me.CheckedListBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckedListBox1.FormattingEnabled = True
-        Me.CheckedListBox1.Items.AddRange(New Object() {"Apple", "Pear", "Banana", "Cherry", "Orange", "Watermelon"})
-        Me.CheckedListBox1.Location = New System.Drawing.Point(17, 14)
-        Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(298, 166)
-        Me.CheckedListBox1.TabIndex = 0
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(18, 245)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(0, 36)
+        Me.Label1.TabIndex = 2
         '
         'Button1
         '
@@ -59,14 +60,25 @@ Partial Class Form1
         Me.Button1.Text = "Show Choices"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label1
+        'CheckedListBox1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(18, 245)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 54)
-        Me.Label1.TabIndex = 2
+        Me.CheckedListBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckedListBox1.FormattingEnabled = True
+        Me.CheckedListBox1.Items.AddRange(New Object() {"Apple", "Pear", "Banana", "Cherry", "Orange", "Watermelon"})
+        Me.CheckedListBox1.Location = New System.Drawing.Point(17, 14)
+        Me.CheckedListBox1.Name = "CheckedListBox1"
+        Me.CheckedListBox1.Size = New System.Drawing.Size(298, 166)
+        Me.CheckedListBox1.TabIndex = 0
+        '
+        'btnWriteToFile
+        '
+        Me.btnWriteToFile.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnWriteToFile.Location = New System.Drawing.Point(403, 148)
+        Me.btnWriteToFile.Name = "btnWriteToFile"
+        Me.btnWriteToFile.Size = New System.Drawing.Size(310, 75)
+        Me.btnWriteToFile.TabIndex = 2
+        Me.btnWriteToFile.Text = "Write Choices To File"
+        Me.btnWriteToFile.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -86,4 +98,5 @@ Partial Class Form1
     Friend WithEvents CheckedListBox1 As CheckedListBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents btnWriteToFile As Button
 End Class
