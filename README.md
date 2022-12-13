@@ -248,6 +248,16 @@ End Class
 
 ## `AndAlso` Operator
 
+- `AndAlso`: If both expressions evaluate to True, result is True.
+    - If the result of the first expression evaluated determines the final result of the operation, there is no need to evaluate the second expression, because it cannot change the final result. 
+    - Short-circuiting can improve performance if the bypassed expression is complex, or if it involves procedure calls.
+- Created a CheckBox Program which displays the respective result upon checking the boxes.
+
+## `OrElse` Operator
+
+- `OrElse`: If either or both expressions evaluate to True, result is True
+    - If the result of the first expression evaluated determines the final result of the operation, there is no need to evaluate the second expression, because it cannot change the final result. 
+    - Short-circuiting can improve performance if the bypassed expression is complex, or if it involves procedure calls.
 
 
 
